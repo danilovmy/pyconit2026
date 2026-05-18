@@ -12,8 +12,8 @@ logger = logging.getLogger(__file__)
 handler = logging.FileHandler( Path(__file__).parent / "logger.log")
 handler.setFormatter(logging.Formatter('%(asctime)s: %(message)s'))
 logger.addHandler(handler)
-GATEWAY_URL = "http://127.0.0.1:18789"
-TOKEN = "336cd5120b8617b38ba30abfc8da2440b9ec2522ade00832"
+GATEWAY_URL = "http://127.0.0.1:18789"  # openclaw case
+TOKEN = "token_to_connect_through_http" # openclaw case
 import requests
 
 
